@@ -2,6 +2,10 @@
 body{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
+    overflow-x: hidden;
+}
+html{
+    overflow-x: hidden;
 }
 /* styling menu icon */
 .nav-menu{
@@ -41,6 +45,7 @@ body{
     background: #fca61f;
     color: #fff;
     font-size: 1.2rem;
+    display: inline-block;
 }
 /* styling home section starts */
 .home{
@@ -64,7 +69,7 @@ body{
 .h-btn:hover{
     background: #6f34fe;
     color: #fff;
-    transform: translateY(-20px);
+    transform: translateY(-8px);
     transition-duration: 1s;
 }
 .link{
@@ -224,6 +229,49 @@ body{
 .post .card{
     border: none;
 }
+.offer-card{
+    height: 100%;
+    border-radius: 0.7rem;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(63, 57, 109, 0.08);
+}
+.offer-card .card-img-top{
+    height: 190px;
+    object-fit: cover;
+}
+.offer-body{
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.offer-body .card-title{
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.offer-price{
+    color: #3f396d;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.1rem;
+}
+.offer-monthly{
+    color: #6f34fe;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+.offer-body .text-muted{
+    min-height: 96px;
+}
+.offer-body .link{
+    margin-top: auto;
+}
+.featured-offer{
+    outline: 3px solid rgba(252, 166, 31, 0.35);
+}
 
 /* testimonial section starts */
 .testimonial img:hover{
@@ -354,7 +402,7 @@ footer .link-group a:hover{
 }
 .social-links button:hover{
     color: #fff;
-    transform: translateY(-20px);
+    transform: translateY(-8px);
     transition-duration: 1s;
 }
 .social-links .dribble:hover{
@@ -383,4 +431,38 @@ footer .link-group a:hover{
     background-color: #fca61f;
     color: #fff;
     animation: pulse 3s infinite;
+}
+
+@media (max-width: 767px){
+    .container-fluid.px-5{
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
+    .home h2{
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+    .c-orange{
+        font-size: 3rem;
+    }
+    .heading h3{
+        font-size: 2rem;
+    }
+    #myBtnContainer button{
+        margin: 0 8px 12px;
+        font-size: 1rem;
+    }
+    .offer-card .card-img-top{
+        height: 170px;
+    }
+    .offer-body{
+        min-height: auto;
+    }
+    .offer-body .card-title,
+    .offer-body .text-muted{
+        min-height: 0;
+    }
+    .contact-form .form-control{
+        width: 100%;
+    }
 }
