@@ -66,6 +66,11 @@ html{
     margin-top: 1rem;
     font-size: 1.2rem;
 }
+.home .hero-proof{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
 .h-btn:hover{
     background: #6f34fe;
     color: #fff;
@@ -272,6 +277,15 @@ html{
 .featured-offer{
     outline: 3px solid rgba(252, 166, 31, 0.35);
 }
+.offer-cta{
+    background: #f2f2ff;
+    border-radius: 0.7rem;
+    padding: 2rem;
+}
+.offer-cta h4{
+    color: #3f396d;
+    font-weight: 700;
+}
 
 /* testimonial section starts */
 .testimonial img:hover{
@@ -330,6 +344,8 @@ html{
     text-decoration: none;
     color: #fca61f;
     font-size: 1.1rem;
+    display: inline-block;
+    margin-top: 0.5rem;
 }
 .blog .blogpost .read-more-btn:hover{
     color: #6f34fe;
@@ -352,6 +368,49 @@ html{
 .modal-body .content small{
     font-size: 1rem;
     color: #6f34fe;
+}
+.article-page{
+    background: #fff;
+}
+.article-hero{
+    background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
+    padding: 5rem 0 4rem;
+}
+.article-hero small{
+    color: #6f34fe;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.article-hero h1{
+    color: #3f396d;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    max-width: 820px;
+}
+.article-hero p{
+    color: #6c757d;
+    font-size: 1.25rem;
+    max-width: 760px;
+}
+.article-body{
+    max-width: 860px;
+    padding: 4rem 1.25rem;
+}
+.article-body h2{
+    color: #3f396d;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+.article-body p{
+    color: #6c757d;
+    font-size: 1.2rem;
+}
+.article-cta{
+    background: #f2f2ff;
+    border-radius: 0.7rem;
+    margin-top: 3rem;
+    padding: 2rem;
 }
 /* contact section starts */
 .contact{
@@ -448,6 +507,10 @@ footer .link-group a:hover{
     .heading h3{
         font-size: 2rem;
     }
+    .blog .blogpost .read-more-btn.ms-3{
+        margin-left: 0 !important;
+        margin-right: 1rem;
+    }
     #myBtnContainer button{
         margin: 0 8px 12px;
         font-size: 1rem;
@@ -464,5 +527,15 @@ footer .link-group a:hover{
     }
     .contact-form .form-control{
         width: 100%;
+    }
+    .article-hero{
+        padding: 3.5rem 0 3rem;
+    }
+    .article-hero h1{
+        font-size: 2.3rem;
+    }
+    .article-hero p,
+    .article-body p{
+        font-size: 1.1rem;
     }
 }
